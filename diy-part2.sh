@@ -21,7 +21,7 @@ sed -i 's/OpenWrt/TWRT/g' package/base-files/files/bin/config_generate
 
 sed -i "s/DISTRIB_DESCRIPTION='OpenWrt '/DISTRIB_DESCRIPTION='TWRT '/g" package/lean/default-settings/files/zzz-default-settings
 
-wget https://raw.githubusercontent.com/Supremeyyds/Actions-OpenWrt/main/add_h28k_support.patch
+wget https://raw.githubusercontent.com/Supremeyyds/Actions-lede/main/add_h28k_support.patch
 git apply add_h28k_support.patch
 rm package/feeds/luci/luci-app-serverchan
 rm -rf feeds/luci/applications/luci-app-serverchan
