@@ -16,6 +16,9 @@
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang -b 1.22 feeds/packages/lang/golang
+
 # Modify hostname
 sed -i 's/OpenWrt/TWRT/g' package/base-files/files/bin/config_generate
 
