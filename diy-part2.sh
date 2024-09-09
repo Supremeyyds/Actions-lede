@@ -16,6 +16,8 @@
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
+rm -rf feeds/packages/net/adguardhome
+
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang -b 1.22 feeds/packages/lang/golang
 
